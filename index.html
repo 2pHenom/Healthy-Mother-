@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru" class="webp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Доставка здорового питания для мам и будущих мам, составим для Вас персональное меню">
+  <link rel="preload" href="fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Здоровое питание для мам</title>
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <header class="main-header" id="header">
+      <div class="main-header__wrapper">
+        <div class="main-header__wrapper-sandwich">
+          <a class="logo main-header__logo">Здоровая мама</a>
+          <button class="main-header__sandwich-button" type="button">Открыть меню
+            <span class="main-header__button-row"></span>
+          </button>
+        </div>
+        <nav class="main-header__navigation">
+          <ul class="same-list menu main-header__menu">
+            <li class="menu__item">
+              <a class="link menu__link" href="#proper-diet">Важность правильного питания</a>
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="#advantage">Почему мы?</a>
+            </li>
+            <li class="menu__item">
+              <a class="link menu__link" href="#order-form">Где заказать?</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="banner main-content__banner">
+        <div class="banner__leaves">
+          <div class="banner__mint banner__mint--biggest"></div>
+          <div class="banner__mint banner__mint--big"></div>
+          <div class="banner__mint banner__mint--small"></div>
+          <div class="banner__mint banner__mint--smallest"></div>
+          <div class="banner__mint banner__mint--midmost"></div>
+          <div class="banner__mint banner__mint--average"></div>
+        </div>
+        <div class="banner__wrapper">
+          <div class="banner__wrapper-text">
+            <h1>Доставка здорового питания для мам</h1>
+            <p>Правильный и вкусный рацион для Вас и вашего ребенка</p>
+            <a class="link button banner__button" href="#order-form">Оформить заказ</a>
+          </div>
+          <div class="banner__wrapper-slider">
+            <ul class="same-list radio-slider banner__radio-slider">
+              <li class="radio-slider__item radio-slider__item--expectant">
+                <input type="radio" name="toggle" id="expectant" checked="">
+                <label for="expectant">
+                  <span>Для беременных</span>
+                </label>
+                <div class="radio-slider__wrapper-image">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/slider-banner-expectant.webp 1x, img/slider-banner-expectant@2x.webp 2x">
+                    <!-- 1х: 1065px; 2x: 2129 -->
+                    <img src="img/slider-banner-expectant.png" srcset="img/slider-banner-expectant@2x.png 2x"
+                      width="1065" height="737" alt="Беременная молодая девушка">
+                  </picture>
+                </div>
+              </li>
+              <li class="radio-slider__item radio-slider__item--nursing">
+                <input type="radio" name="toggle" id="nursing">
+                <label for="nursing">
+                  <span>Для кормящих</span>
+                </label>
+                <div class="radio-slider__wrapper-image">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/slider-banner-nursing.webp 1x, img/slider-banner-nursing@2x.webp 2x">
+                    <!-- 1х: 449px; 2x: 898px -->
+                    <img src="img/slider-banner-nursing.png" srcset="img/slider-banner-nursing@2x.png 2x" width="449"
+                      height="724" alt="Молодая девушка держит около груди младенца">
+                  </picture>
+                </div>
+              </li>
+              <li class="radio-slider__item radio-slider__item--safe-treats">
+                <input type="radio" name="toggle" id="safe-treats">
+                <label for="safe-treats">
+                  <span>Безопасные лакомства</span>
+                </label>
+                <div class="radio-slider__wrapper-image">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="img/slider-banner-safe-treats.webp 1x, img/slider-banner-safe-treats@2x.webp 2x">
+                    <!-- 1х: 470px; 2x: 940px -->
+                    <img src="img/slider-banner-safe-treats.png" srcset="img/slider-banner-safe-treats@2x.png 2x"
+                      width="470" height="758" alt="Девушка стоит вполоборота и кусает зеленое яблоко">
+                  </picture>
+                </div>
+              </li>
+            </ul>
+            <div class="banner__wrapper-controls">
+              <button class="slider-button slider-button--prev banner__slider-button banner__slider-button--prev"
+                type="button">Предыдущий слайд</button>
+              <button class="slider-button slider-button--next banner__slider-button banner__slider-button--next"
+                type="button">Следующий слайд</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="proper-diet main-content__proper-diet" id="proper-diet">
+        <div class="proper-diet__wrapper-content">
+          <div class="proper-diet__content">
+            <div class="proper-diet__wrapper-nutritionist">
+              <picture>
+                <source type="image/webp" srcset="img/nutritionist.webp 1x, img/nutritionist@2x.webp 2x">
+                <!-- 1х: 626px; 2x: 1252px -->
+                <img src="img/nutritionist.png" srcset="img/nutritionist@2x.png 2x" width="626" height="582"
+                  alt="Диетолог Иванова Надежда Александрова">
+              </picture>
+              <div class="proper-diet__nutritionist-name">
+                <p class="proper-diet__name">Иванова Надежда Александровна</p>
+                <p class="proper-diet__position">Сертифицированный диетолог</p>
+              </div>
+            </div>
+            <div class="proper-diet__wrapper-text">
+              <h2>Почему Вам нужно правильно питаться?</h2>
+              <div class="proper-diet__wrapper-list">
+                <ul class="same-list proper-diet__list">
+                  <li class="proper-diet__item">
+                    <p>Здоровый ребенок</p>
+                  </li>
+                  <li class="proper-diet__item">
+                    <p>Повышение иммунитета</p>
+                  </li>
+                  <li class="proper-diet__item">
+                    <p>Поддержание фигуры</p>
+                  </li>
+                </ul>
+                <ul class="same-list proper-diet__list">
+                  <li class="proper-diet__item">
+                    <p>Отстутствие вредных компонентов</p>
+                  </li>
+                  <li class="proper-diet__item proper-diet__item--long">
+                    <p>Снижение нагрузки на&nbsp;органы пищеварения</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="foodstuffs main-content__foodstuffs">
+        <h2>Обязательные продукты для здорового питания:</h2>
+        <div
+          class="foodstuffs__swiper-container swiper-container">
+          <ul class="same-list foodstuffs__swiper-wrapper swiper-wrapper">
+            <li class="foodstuffs__swiper-slide swiper-slide swiper-slide-active">
+              <picture>
+                <source type="image/webp" srcset="img/slider-meat.webp 1x, img/slider-meat@2x.webp 2x">
+                <!-- 1х: 663px; 2x: 1326px -->
+                <img src="img/slider-meat.jpg" srcset="img/slider-meat@2x.jpg 2x" alt="Разделанный кролик" width="663"
+                  height="261">
+              </picture>
+              <h3>Мясо</h3>
+              <p>Крольчатина, телятина, индейка, курица без кожи. Мясные блюда ежедневно должны присутствовать в питании в тушеном, запеченном или вареном виде.</p>
+            </li>
+            <li class="foodstuffs__swiper-slide swiper-slide swiper-slide-next">
+              <picture>
+                <source type="image/webp" srcset="img/slider-cheese.webp 1x, img/slider-cheese@2x.webp 2x">
+                <!-- 1х: 663px; 2x: 1220px -->
+                <img src="img/slider-cheese.jpg" srcset="img/slider-cheese@2x.jpg 2x" alt="Разрезанная головка сыра"
+                  width="663" height="261">
+              </picture>
+              <h3>Продукты из молока</h3>
+              <p>Сыр, ряженка, простокваша, творог, йогурт без добавок, кефир. Желательно кушать их кормящей маме ежедневно либо через день.</p>
+            </li>
+            <li class="foodstuffs__swiper-slide swiper-slide swiper-slide-prev">
+              <picture>
+                <source type="image/webp" srcset="img/slider-vegetables.webp 1x, img/slider-vegetables@2x.webp 2x">
+                <!-- 1х: 663px; 2x: 1326px -->
+                <img src="img/slider-vegetables.jpg" srcset="img/slider-vegetables@2x.jpg 2x"
+                  alt="Зеленые овощи и различные травы" width="663" height="261">
+              </picture>
+              <h3>Овощи</h3>
+              <p>Брокколи, тыква, цветная капуста, репка, огурцы. Готовьте блюда из тушеных смесей без добавления масла.
+              </p>
+            </li>
+          </ul>
+          <div class="foodstuffs__wrapper-controls">
+            <button class="foodstuffs__slider-button foodstuffs__slider-button--prev slider-button slider-button--prev"
+              type="button" tabindex="0" role="button" aria-label="Previous slide">Предыдущий
+              слайд</button>
+            <button class="foodstuffs__slider-button foodstuffs__slider-button--next slider-button slider-button--next"
+              type="button" tabindex="0" role="button" aria-label="Next slide">Следующий
+              слайд</button>
+          </div>
+        </div>
+      </section>
+      <section class="advantage main-content__advantage" id="advantage">
+        <div class="advantage__wrapper-content">
+          <h2>
+            Почему мамы выбирают&nbsp;нашу доставку?
+          </h2>
+          <ul class="same-list advantage__list">
+            <li class="advantage__item advantage__item--eco-friendliness">
+              <h3>Экологичность:</h3>
+              <p>продукты выращиваются без применения химии</p>
+            </li>
+            <li class="advantage__item advantage__item--equilibrium">
+              <h3>Сбалансированность:</h3>
+              <p>наши блюда составляют ведущие диетологи по&nbsp;уникальной рецептуре</p>
+            </li>
+            <li class="advantage__item advantage__item--individuality">
+              <h3>Индивидуальность:</h3>
+              <p>для вашего выбора мы предоставляем большое кол-во вариантов блюд</p>
+            </li>
+            <li class="advantage__item advantage__item--useful">
+              <h3>Польза:</h3>
+              <p>питаясь нашими продуктами, Вы можете быть уверены в своем здоровье и здоровье ребенка</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="main-content__wrapper-instagram-order">
+        <section class="instagram main-content__instagram">
+          <h2>Наш Instagram</h2>
+          <p>
+            <a class="link instagram__link" href="#">Подписывайтесь</a>
+            , чтобы быть в курсе последних новостей
+          </p>
+          <picture>
+            <source type="image/webp" srcset="img/instagramm-images.webp 1x, img/instagramm-images@2x.webp 2x">
+            <!-- 1х: 1920px; 2x: 3840px -->
+            <img src="img/instagramm-images.png" srcset="img/instagramm-images@2x.png 2x" width="1920" height="1172"
+              alt="различные фотографии полезной еды и напитков">
+          </picture>
+        </section>
+        <section class="order-form" id="order-form">
+          <div class="order-form__wrapper">
+            <h2>Заказ персонального меню</h2>
+            <div class="order-form__wrapper-title">
+              <p>Хотите получить персональное меню?</p>
+            </div>
+            <p>Оставьте заявку и наш оператор свяжется с Вами для уточнения деталей</p>
+            <div class="order-form__wrapper-form">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <div class="order-form__row">
+                  <label class="visual-hidden" for="name">Представьтесь</label>
+                  <input id="name" type="text" name="name" placeholder="Ваше имя"
+                    pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" autocomplete="on" required="">
+                </div>
+                <div class="order-form__row">
+                  <label class="visual-hidden" for="phone">Укажите Ваш номер телефона</label>
+                  <input id="phone" type="tel" name="phone" placeholder="Ваш телефон"
+                    pattern="\+7\s\([0-9]{3}\)\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="on" required="">
+                </div>
+                <button class="button order-form__button" type="submit">Оформить заказ</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="link logo main-footer__logo" href="#header">Здоровая мама</a>
+        <ul class="same-list menu main-footer__menu">
+          <li class="menu__item">
+            <a class="link menu__link" href="#proper-diet">Важность правильного питания</a>
+          </li>
+          <li class="menu__item">
+            <a class="link menu__link" href="#advantage">Почему мы?</a>
+          </li>
+          <li class="menu__item">
+            <a class="link menu__link" href="#order-form">Где заказать?</a>
+          </li>
+        </ul>
+        <ul class="same-list main-footer__conditions">
+          <li class="main-footer__conditions-item">
+            <a class="link main-footer__conditions-link" href="#">Политика конфиденциальности</a>
+          </li>
+          <li class="main-footer__conditions-item">
+            <a class="link main-footer__conditions-link" href="#">Условия онлайн-использования</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!-- vendor -->
+  <script src="js/vendor/i-mask.js"></script>
+  <script src="js/vendor/picturefill.js"></script>
+  <script src="js/vendor/scroll-smooth-polyfill.js"></script>
+  <script src="js/vendor/swiper.min.js"></script>
+  <script src="js/vendor/webp-check.js"></script>
+
+  <!-- modules -->
+  <script src="js/modules/banner-slider-mobile.js"></script>
+  <script src="js/modules/debounce.js"></script>
+  <script src="js/modules/menu.js"></script>
+  <script src="js/modules/phone-mask.js"></script>
+  <script src="js/modules/slider.js"></script>
+  <script src="js/modules/smooth-scroll.js"></script>
+</body>
+
+</html>
